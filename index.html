@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Lab 1 - mini challenges</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
-    <div class="totalcost" id="totalcost" data-price = "0.00">Total: </div>
-    <button class="limecola" id="limecola" data-price = "2.00">Lime Cola $2.00</button>
-    <button class="peanuts" id="peanuts" data-price = "3.00">Salted Peanuts $3.00</button>
-    <button class="chocolate" id="chocolate" data-price = "4.00">Chocolate Bar $4.00</button>
-    <button class="gummies" id="gummies" data-price = "6.00">Fruit Gummies $6.00</button>
+  </head>
+  <body>
+    <div class="totalcost" id="totalcost" data-price="0.00">Total:</div>
+    <button class="limecola" id="limecola" data-price="2.00">
+      Lime Cola $2.00
+    </button>
+    <button class="peanuts" id="peanuts" data-price="3.00">
+      Salted Peanuts $3.00
+    </button>
+    <button class="chocolate" id="chocolate" data-price="4.00">
+      Chocolate Bar $4.00
+    </button>
+    <button class="gummies" id="gummies" data-price="6.00">
+      Fruit Gummies $6.00
+    </button>
     <button class="reset" id="reset">Reset Total</button>
-</body>
+    <p></p>
+    <form id="coinForm">
+        <label for="count">How Many?</label>
+        <input type="number" class="count" id="count" name="count">
+        <label for="coinType">Which Coin?</label>
+        <select name="coinType" id="coinType">
+            <option value="penny">Penny</option>
+            <option value="nickel">Nickel</option>
+            <option value="dime">Dime</option>
+            <option value="quarter">Quarter</option>
+        </select>
+        <input type="submit" value="Make Money!">
+    </form>
+  </body>
 </html>

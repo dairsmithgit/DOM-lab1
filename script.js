@@ -11,28 +11,28 @@ window.onload = function () {
       document.getElementById("limecola").getAttribute("data-price")
     );
     newTotal += buttonPrice;
-    document.getElementById("totalcost").innerText = `Total: ${newTotal}.00`;
+    document.getElementById("totalcost").innerText = `Total: $${newTotal}.00`;
   });
   button2.addEventListener("click", (event) => {
     let buttonPrice = Number(
       document.getElementById("peanuts").getAttribute("data-price")
     );
     newTotal += buttonPrice;
-    document.getElementById("totalcost").innerText = `Total: ${newTotal}.00`;
+    document.getElementById("totalcost").innerText = `Total: $${newTotal}.00`;
   });
   button3.addEventListener("click", (event) => {
     let buttonPrice = Number(
       document.getElementById("chocolate").getAttribute("data-price")
     );
     newTotal += buttonPrice;
-    document.getElementById("totalcost").innerText = `Total: ${newTotal}.00`;
+    document.getElementById("totalcost").innerText = `Total: $${newTotal}.00`;
   });
   button4.addEventListener("click", (event) => {
     let buttonPrice = Number(
       document.getElementById("gummies").getAttribute("data-price")
     );
     newTotal += buttonPrice;
-    document.getElementById("totalcost").innerText = `Total: ${newTotal}.00`;
+    document.getElementById("totalcost").innerText = `Total: $${newTotal}.00`;
   });
   button5.addEventListener("click", (event) => {
     newTotal = 0;

@@ -9,4 +9,12 @@
      width: 100%;
      justify-content: center;
      align-items: center;
+     padding: 40px;
  }
+
+ .coinForm {
+     display: flex;
+     flex-direction: column;
+ }
+
+ 

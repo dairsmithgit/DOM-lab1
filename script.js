@@ -38,4 +38,25 @@ window.onload = function () {
     newTotal = 0;
     document.getElementById("totalcost").innerText = `Total: $${newTotal}.00`;
   });
+
+  const formEl = document.getElementById("coinForm");
+
+  formEl.addEventListener("submit", (event => {
+    event.preventDefault();
+
+    let coinName = document.getElementById("coinType").value;
+    let coinCount = parseInt( document.getElementById("count").value );
+
+    for (let i = 0; i < coinCount; i++) {
+
+    
+    let newCoinEl = document.createElement("div");
+
+    newCoinEl.innerText = coinName;
+    newCoinEl.classList.add("coin");
+
+    let theContainer = document.getElementById("coins");
+    theContainer.append(newCoinEl);
+    }
+  }))
 };
